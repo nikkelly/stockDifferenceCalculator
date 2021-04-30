@@ -10,8 +10,8 @@ STARTMONTH=1
 STARTDAY=1
 
 ENDYEAR=2021
-ENDMONTH=3
-ENDDAY=11
+ENDMONTH=4
+ENDDAY=30
 
 SOURCE_FILE='allsymbols.txt'
 # Update variables above to scope your query
