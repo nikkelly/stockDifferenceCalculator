@@ -48,9 +48,8 @@ for symbol in SYMBOLS:
       new_row = {'Stock':symbol,'totalDifference':totalDifference,'Start':startValue,'End':endValue}
       trackingDF = trackingDF.append(new_row,ignore_index=True)
   except:
-    # print('There\'s a problem with: {}'.format(symbol))
     print('Problem with {}'.format(symbol))
     PROBLEMLIST.append(symbol)
 
 # export to a CSV
-trackingDF.to_csv(r'totalDifference.csv', index=False)
+trackingDF.to_csv(f'.\\output\\{STARTMONTH}-{STARTMONTH}-{STARTDAY} to {ENDMONTH}-{ENDDAY}-{ENDYEAR}.csv', index=False)
